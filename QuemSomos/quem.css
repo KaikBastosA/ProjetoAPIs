@@ -1,0 +1,220 @@
+/* ----- ESTILIZAÇÃO GLOBAL ----- */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Darker Grotesque", serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* ----- FIM DA ESTILIZAÇÃO GLOBAL ----- */
+
+/* ----- ESTILIZAÇÃO HEADER ----- */
+
+header {
+    display: grid;
+    justify-items: center;
+    background-color: #85CDF5;
+}
+
+header a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+header a:first-child {
+    position: relative;
+}
+
+header a:first-child::after {
+    content: "";
+    text-align: right;
+    position: relative;
+    display: inline-block;
+    bottom: 0;
+    left: -10px;
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: #333333;
+    transition: 1s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+header a:first-child:hover::after {
+    width: 70%;
+}
+header a:last-child {
+    position: relative;
+    direction: rtl;
+}
+header a:last-child::after {
+    content: "";
+    text-align: right;
+    position: relative;
+    display: inline-block;
+    bottom: 0;
+    right: -10px;
+    display: block;
+    width: 0%;
+    height: 4px;
+    background-color: #333333;
+    transition: 1s all cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+header a:last-child:hover::after {
+    width: 70%;
+}
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20%;
+    width: 70%;
+    padding-top: 0.75%;
+}
+
+#wolf-icon-link {
+    height: 90%;
+    margin-bottom: 10px;
+    transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#wolf-icon {
+    height: 100%;
+    will-change: width, height;
+}
+
+#wolf-icon-link:hover {
+    height: 100%;
+}
+
+/* ----- FIM DA ESTILIZAÇÃO DO HEADER ----- */
+
+
+/* ----- ESTILIZAÇÃO DA MAIN ----- */
+
+main {
+    display: grid;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+}
+
+main section {
+    justify-items: center;
+}
+
+main section h1 {
+    font-size: 65px;
+    font-weight: 600;
+    padding-bottom: 10%;
+}
+
+main section div p{
+    width: 960px;
+    height: 134px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+/* ----- FIM DA ESTILIZAÇÃO DA MAIN ----- */
+
+
+/* ----- ESTILIZAÇÃO DO FOOTER ----- */
+
+section {
+    margin-bottom: 30px;
+}
+
+.division-bar {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #DEB959, #2C5680);
+}
+.footer-content-container {
+    background-color: #333333;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+}
+.location-information-container {
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 25%;
+    gap: 10%;
+    margin-left: 2%;
+    margin-right: 15%;
+}
+.location-information-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+.location-information-container div img {
+    width: 16px;
+    height: 16px;
+}
+.location-information-container div p {
+    font-weight: 200;
+    line-height: 20px;
+    font-size: 1.125rem;
+}
+.footer-content-container iframe {
+    width: clamp(251px, 20%, 172px);
+    height: 70%;
+}
+.location-information-container button {
+    width: fit-content;
+    height: 25%;
+    margin-top: auto;
+}
+.location-information-container a {
+    padding-bottom: 5px;
+    font-size: 1.3rem;
+}
+.Who-we-are {
+    background-color: #DEB959;
+    color: #353535;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 0 10px;
+    margin-top: auto;
+}
+.paw-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.paw-container p {
+    padding-bottom: 10px;
+}
+
+/* ----- FIM DA ESTILIZAÇÃO DO FOOTER ----- */
