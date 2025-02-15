@@ -1,0 +1,17 @@
+{
+  "name": "projetoapi",
+  "version": "1.0.0",
+  "description": "Repositório contendo a tarefa do ProjetoAPI da INJunior",
+  "main": "index.js",
+  "scripts": {
+    "init": "concurrently \"live-server ./ --open=./HomePage/home.html\" \"json-server --watch ./Midias/database.json --port 3000\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "json-server": "^1.0.0-beta.3",
+    "live-server": "^1.2.2"
+  }
+}
