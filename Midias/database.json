@@ -11001,17 +11001,5 @@
       "emailDono": "gcurnickrr@nytimes.com"
     }
   ],
-  "currentWolfSelected": [
-    {
-      "id": "1",
-      "nome": "Jada",
-      "idade": 94,
-      "descricao": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-      "imagem": "http://dummyimage.com/706x483.png/cc0000/ffffff",
-      "adotado": false,
-      "nomeDono": null,
-      "idadeDono": null,
-      "emailDono": null
-    }
-  ]
+  "currentWolfSelected": []
 }
